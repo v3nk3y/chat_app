@@ -15,7 +15,7 @@ class ChatApp extends StatelessWidget {
           bodyText1: TextStyle(color: Colors.black),
         ),
       ),
-      initialRoute: ChatScreen.id,
+      initialRoute: WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
         LoginScreen.id: (context) => LoginScreen(),
