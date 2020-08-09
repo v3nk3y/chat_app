@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "304017770439",
+    "firebase_url": "https://chat-app-bd850.firebaseio.com",
+    "project_id": "chat-app-bd850",
+    "storage_bucket": "chat-app-bd850.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304017770439:android:39b26abde209be393ffbe2",
+        "android_client_info": {
+          "package_name": "v3nkat3sh.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304017770439-h97sec7gndipell9k2nlb3rqbicq1ehv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT0mhxopkZA_NmLz7FDGx3EKSVWh1OnVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304017770439-h97sec7gndipell9k2nlb3rqbicq1ehv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
