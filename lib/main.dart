@@ -10,11 +10,11 @@ class ChatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        textTheme: TextTheme(
-          bodyText1: TextStyle(color: Colors.black),
-        ),
-      ),
+//      theme: ThemeData.dark().copyWith(
+//        textTheme: TextTheme(
+//          bodyText1: TextStyle(color: Colors.black),
+//        ),
+//      ),
       initialRoute: WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
