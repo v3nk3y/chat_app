@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:chat_app/constants.dart';
 import 'package:chat_app/components/message_stream.dart';
 
+final _firestore = Firestore.instance;
+
 class ChatScreen extends StatefulWidget {
   static const String id = 'chat_screen';
   @override
@@ -11,7 +13,6 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  final _firestore = Firestore.instance;
   final _auth = FirebaseAuth.instance;
   final messageTextController = TextEditingController();
   FirebaseUser logggedInUser;
