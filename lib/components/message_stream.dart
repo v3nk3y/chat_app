@@ -4,6 +4,8 @@ import 'package:chat_app/components/message_bubble.dart';
 
 class MessageStream extends StatelessWidget {
   final _firestore = Firestore.instance;
+  MessageStream({this.loggedInUser});
+  final String loggedInUser;
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +24,11 @@ class MessageStream extends StatelessWidget {
         for (var message in messages) {
           final messageText = message.data['text'];
           final messageSender = message.data['sender'];
-          final messageBubble =
-              MessageBubble(text: messageText, sender: messageSender);
+          final messageBubble = MessageBubble(
+            text: messageText,
+            sender: messageSender,
+            isCurrentUser: loggedInUser == messageSender,
+          );
           messageBubbles.add(messageBubble);
         }
         return Expanded(
